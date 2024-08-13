@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <style>
+    body { margin: 0; }
+    
+    #container {
+    display: flex;
+    flex-direction: row;
+    aspect-ratio: 1;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+   }
+    #container > div {
+    aspect-ratio: 1;
+    scroll-snap-align: center;
+    }
+
+    #container > div {
+      display: flex;
+      min-height: 200px;
+      background-size: cover;
+      background-position: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .img_1 { background-image: url(https://showcases.yalco.kr/html-css-scoop/04-12/images/01.jpg); }
+    .img_2 { background-image: url(https://showcases.yalco.kr/html-css-scoop/04-12/images/02.jpg); }
+    .img_3 { background-image: url(https://showcases.yalco.kr/html-css-scoop/04-12/images/03.jpg); }
+    .img_4 { background-image: url(https://showcases.yalco.kr/html-css-scoop/04-12/images/04.jpg); }
+    </style>
+</head>
+<body>
+  <section>
+    <div id="container">
+      <div class="img_1"></div>
+      <div class="img_2"></div>
+      <div class="img_3"></div>
+      <div class="img_4">
+        <button type="join">회원가입</button>
+        <button type="login">로그인</button>
+        <button type="find_id">아이디 찾기</button>
+        <button type="find_password">비밀번호 찾기</button>
+      </div>
+  </div>    
+  </section>
+</body>
+</html>
